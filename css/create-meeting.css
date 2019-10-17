@@ -1,0 +1,54 @@
+
+.content-cls {
+    padding-top: 20px;
+}
+
+#tabsJustified > li > a {
+    color: #495057;
+    font-weight: 600;
+}
+
+.h4text {
+    color: #545070;
+    /* font-family: 'PT Sans', sans-serif; */
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+#tabsJustifiedContent {
+    font-size: 13px;
+}
+
+input::placeholder, textarea::placeholder, option, #inputState {
+    font-size: 13px; 
+}
+
+.nxt {
+    padding-bottom: 30px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.nxt > a  {
+    padding: 1px 18px 1px 18px;
+}
+
+.two-btn {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.publish_btn {
+    display: flex;
+    justify-content: flex-end;
+    font-size: 13px;
+}
+
+.publish_btn > a {
+    padding: 3px 18px 0px 18px;
+}
+
+.two-btn > a {
+    padding: 1px 18px 1px 18px;
+}

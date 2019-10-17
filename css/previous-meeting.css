@@ -1,0 +1,37 @@
+.table-cls {
+    padding-top: 50px;
+    width: 95% !important;
+}
+div.hrr hr{
+    border: 1px solid #627197;
+    margin-bottom: 35px;
+    opacity: 0.5;
+}
+
+th, td {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+}
+
+th {
+    font-weight: 600; 
+}
+
+.heading {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    padding-top: 20px;
+}
+
+.right-side {
+    height: 90vh;
+    background-color: #F9F9F9;
+}
+
+@media only screen and (max-width: 991px) {
+    .action-btn-inside .dropdown-item {
+        cursor: pointer;
+    }
+ }

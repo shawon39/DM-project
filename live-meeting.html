@@ -1,0 +1,283 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Favicon -->
+    <link rel="icon" href="img/favicons/icon2.png" />
+
+    <link rel="stylesheet" href="css/index.css" />
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <script src="https://kit.fontawesome.com/b5da2e7b52.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Lato|Montserrat|Open+Sans|Oswald|Raleway|Roboto&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/live-meeting.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <title>LIve Meeting</title>
+    <style>
+        .pdfobject-container {
+            height: 30rem;
+            border: 1rem solid rgba(0, 0, 0, .1);
+        }
+    </style>
+</head>
+
+<body class="container-fluid" id="app">
+
+    <nav class="navbar navbar-expand-lg navbar-light nav-bar-cls">
+        <a href="dashboard.html">
+            <img id="logo" class="img-fluid" src="img/logo/logo3.PNG" alt="logo" />
+        </a>
+        <div class="page-name"> <h5>Dashboard</h5> </div>
+        <div class="nav-bar-cls-inside ml-auto">
+            <ul class="navbar-nav navbar-right-items">
+                <div> <a href="#" <i class="fas fa-plus-square ml-4"></i> </a> </div>
+                <div> <a href="#" <i class="fas fa-bell ml-4"></i> </a> </div>
+                <div class="btn-group">
+                    <div class="pro-picture ml-4" data-toggle="dropdown" aria-haspopup="true"
+                        aria-expanded="false">
+                        <img class="rounded" src="img/people/shawon2.jpg" alt="User profile pic">
+                    </div>
+                    <div class="dropdown-menu dropdown-menu-right action-btn-inside grow2">
+                        <button class="dropdown-item" type="button">My Account</button>
+                        <hr />
+                        <button class="dropdown-item" type="button">Sign Out</button>
+                    </div>
+                </div>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="row">
+        <div class="col-md-2 left-side">
+
+            <div class="row">
+                <div class="col-md-12 mr-0">
+                    <div class="list-group list-group-flush items-gap">
+                        <a href="dashboard.html" class="list-group-item list-group-item-action"> <i
+                                class="fas fa-home"></i>
+                            <span class="ml-2"></span> Dashboard</a>
+
+                        <div class="meeting--">
+                            <div class="card-header color-rmv" id="headingOne">
+                                <h5 class="mb-0">
+                                    <a href="#" class="meeting-bar" data-toggle="collapse" data-target="#collapseOne"
+                                        aria-expanded="true" aria-controls="collapseOne">
+                                        <i class="fas fa-laptop"></i>
+                                        <span class="ml-2"></span>
+                                        Meeting
+                                    </a>
+                                </h5>
+                            </div>
+
+                            <div id="collapseOne" class="collapse hide" aria-labelledby="headingOne">
+                                <div class="card-body">
+                                    <a href="create-meeting.html" class="list-group-item list-group-item-action">create
+                                        meeting</a>
+                                    <a href="current-meeting.html"
+                                        class="list-group-item list-group-item-action">current
+                                        meeting</a>
+                                    <a href="previous-meeting.html"
+                                        class="list-group-item list-group-item-action">previous
+                                        meeting</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <a href="action-items.html" class="list-group-item list-group-item-action"><i
+                                class="fas fa-exclamation-circle"></i> <span class="ml-2"></span> Action
+                            Items</a>
+                        <a href="calendar.html" class="list-group-item list-group-item-action"><i
+                                class="far fa-calendar-check"></i> <span class="ml-2"></span> Calendar</a>
+                        <a href="settings.html" class="list-group-item list-group-item-action"><i
+                                class="fas fa-tools"></i>
+                            <span class="ml-2"></span> Settings</a>
+                        <a href="help.html" class="list-group-item list-group-item-action"><i
+                                class="fas fa-question-circle"></i> <span class="ml-2"></span> Help</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="col-md-10 pt-3 right-side">
+            <div class="row mb-5">
+                <div class="col-md-8">
+                    <div class="view-box" id="view-box">
+                        <h4>Live Meeting</h4>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="comments">
+                        <div class="comment-header">
+                            <p>Comment <i class="fa fa-commenting-o" aria-hidden="true"></i></p>
+                        </div>
+                        <div class="comment-box">
+                            <ul class="p-0">
+                                <li class="d-flex align-items-center">
+                                    <div class="img"><img src="./img/people/shawon.jpg"></div>
+                                    <div class="ml-3">
+                                        <p class="m-0 strong name">Shawon</p>
+                                        <p class="m-0 small msg">This is awesome</p>
+                                    </div>
+                                </li>
+                                <li class="d-flex align-items-center">
+                                    <div class="img"><img src="./img/people/shawon.jpg"></div>
+                                    <div class="ml-3">
+                                        <p class="m-0 strong name">Shawon</p>
+                                        <p class="m-0 small msg">This is awesome</p>
+                                    </div>
+                                </li>
+                                <li class="d-flex align-items-center">
+                                    <div class="img"><img src="./img/people/shawon.jpg"></div>
+                                    <div class="ml-3">
+                                        <p class="m-0 strong name">Shawon</p>
+                                        <p class="m-0 small msg">This is awesome</p>
+                                    </div>
+                                </li>
+                                <li class="d-flex align-items-center">
+                                    <div class="img"><img src="./img/people/shawon.jpg"></div>
+                                    <div class="ml-3">
+                                        <p class="m-0 strong name">Shawon</p>
+                                        <p class="m-0 small msg">This is awesome</p>
+                                    </div>
+                                </li>
+                                <li class="d-flex align-items-center">
+                                    <div class="img"><img src="./img/people/shawon.jpg"></div>
+                                    <div class="ml-3">
+                                        <p class="m-0 strong name">Shawon</p>
+                                        <p class="m-0 small msg">This is awesome</p>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="comment-input">
+                            <form action="#">
+                                <div class="d-flex">
+                                    <input type="text" placeholder="type..." class="form-control cmnt-bx">
+                                    <a href="#" class="btn btn-info"><i class="fa fa-paper-plane"
+                                            aria-hidden="true"></i></a>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row" style="background: white;">
+                <div class="col-md-12 content-cls">
+                    <div class="row">
+                        <div class="col-md-12">
+
+                            <ul id="tabsJustified" class="nav nav-tabs">
+                                <li class="nav-item"><a href="" data-target="#info" data-toggle="tab"
+                                        class="nav-link small text-uppercase active">Meeting Details</a></li>
+                                <li class="nav-item"><a href="" data-target="#agenda" data-toggle="tab"
+                                        class="nav-link small text-uppercase">Agenda</a></li>
+                                <li class="nav-item"><a href="" data-target="#participants" data-toggle="tab"
+                                        class="nav-link small text-uppercase">Action</a></li>
+                                <li class="nav-item"><a href="" data-target="#publish" data-toggle="tab"
+                                        class="nav-link small text-uppercase">Announcement</a></li>
+                            </ul>
+                            <br>
+                            <div id="tabsJustifiedContent" class="tab-content">
+                                <div id="info" class="tab-pane fade active show">
+                                    <h4 class="h4text">Meeting Details</h4>
+                                    <hr>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae suscipit
+                                        totam ipsa aliquid numquam recusandae, dolor ab, minima magni nesciunt autem
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, quos dolores
+                                        enim facilis debitis eaque! Delectus nihil repellat ducimus quaerat aut,
+                                        blanditiis alias, eum dolor, ipsum voluptatibus laborum commodi earum! sequi
+                                        eaque aperiam iste sint, iure laborum assumenda quis.</p>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae suscipit
+                                        totam ipsa aliquid numquam recusandae, dolor ab, minima magni nesciunt autem
+                                        sequi eaque aperiam iste sint, iure laborum assumenda quis.</p>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae suscipit
+                                        totam ipsa aliquid numquam recusandae, dolor ab, minima magni nesciunt autem
+                                        sequi eaque aperiam iste sint, iure laborum assumenda quis.</p>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae suscipit
+                                        totam ipsa aliquid numquam recusandae, dolor ab, minima magni nesciunt autem
+                                        sequi eaque aperiam iste sint, iure laborum assumenda quis.</p>
+                                </div>
+                                <div id="agenda" class="tab-pane fade">
+                                    <h4 class="h4text">Create Agenda</h4>
+                                    <hr>
+                                    <ul class="list-group">
+                                        <li class="list-group-item"><a href="#" class="nav-link bttn"
+                                                data-field="dummy1.pdf">1. Cras justo odio</a>
+                                        </li>
+                                        <li class="list-group-item"><a href="#" class="nav-link bttn"
+                                                data-field="dummy2.pdf">2. Dapibus ac facilisis
+                                                in</a></li>
+                                        <li class="list-group-item"><a href="#" class="nav-link bttn"
+                                                data-field="dummy3.pdf">3. Morbi leo risus</a>
+                                        </li>
+                                        <li class="list-group-item"><a href="#" class="nav-link bttn"
+                                                data-field="dummy4.pdf">4. Porta ac consectetur
+                                                ac</a></li>
+                                        <li class="list-group-item"><a href="#" class="nav-link bttn"
+                                                data-field="dummy5.pdf">5. Vestibulum at
+                                                eros</a></li>
+                                    </ul>
+
+                                </div>
+                                <div id="participants" class="tab-pane fade">
+                                    <h4 class="h4text">Action Plan</h4>
+                                    <hr>
+                                    <p>There is no action taken</p>
+                                </div>
+                                <div id="publish" class="tab-pane fade">
+                                    <h4 class="h4text">Announcement</h4>
+                                    <hr>
+                                    <ul class="list-group">
+                                        <li class="list-group-item">
+                                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellendus magni voluptates pariatur vitae, commodi sapiente! Cum nobis hic quidem? Repellendus!
+                                        </li>
+                                        <li class="list-group-item">
+                                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellendus magni voluptates pariatur vitae, commodi sapiente! Cum nobis hic quidem? Repellendus!
+                                        </li>
+                                        <li class="list-group-item">
+                                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellendus magni voluptates pariatur vitae, commodi sapiente! Cum nobis hic quidem? Repellendus!
+                                        </li>
+                                        <li class="list-group-item">
+                                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellendus magni voluptates pariatur vitae, commodi sapiente! Cum nobis hic quidem? Repellendus!
+                                        </li>
+                                        <li class="list-group-item">
+                                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellendus magni voluptates pariatur vitae, commodi sapiente! Cum nobis hic quidem? Repellendus!
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    </div>
+
+    <script src="js/index.js"></script>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdfobject/2.1.1/pdfobject.min.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            $(".bttn").on('click', function (e) {
+                $("#view-box").empty();
+                let name = $(e.target).attr("data-field");
+                PDFObject.embed(`./pdf/${name}`, "#view-box");
+            })
+        })
+    </script>
+</body>
+
+</html>

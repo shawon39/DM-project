@@ -1,0 +1,168 @@
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+.action-btn-inside {
+    font-size: 13px !important;
+    position: absolute !important;
+    left: -150px !important;
+}
+
+
+.action-btn-inside > hr {
+    margin: 0em;
+}
+
+.right-side {
+    border-left: 1px solid #ddd;
+}
+
+.left-side {
+    font-family: 'Roboto', sans-serif;
+    font-size: 13px;
+    font-weight: 600;
+    color: #495057;
+}
+
+#logo {
+    height: 40px;
+    width: auto;
+}
+
+.pro-picture img {
+    height: 35px;
+    width: auto;
+    cursor: pointer;
+}
+
+.content-cls {
+    background-color: #F9F9F9;
+}
+
+.items-gap {
+    margin-left: -15px;
+    margin-top: 15px;
+}
+
+.pro-name {
+    background: transparent;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
+}
+
+.fa-plus-square,
+.fa-bell {
+    color: #495057;
+}
+
+.pro-dropdown>button {
+    font-size: 12px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.right-side.col-md-10 {
+    height: 90vh;
+}
+
+.meeting-bar {
+    color: #495057;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
+    font-size: 13px;
+}
+
+.meeting-bar:hover {
+    text-decoration: none;
+    color: #495057;
+}
+
+.color-rmv {
+    color: #FFFFFF;
+}
+
+.nav-bar-cls {
+    background-color: #FFFFFF;
+    border-bottom: 1px solid #ddd;
+}
+
+.navbar-right-items {
+    display: flex;
+    align-items: center;
+}
+
+.page-name {
+    margin-left: 95px;
+}
+
+.page-name>h5 {
+    color: #495057;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
+    font-size: 13px;
+}
+
+.calendar {
+    margin-top: 30px;
+    text-align: center;
+}
+
+.table-cls {
+    padding: 0px 20px !important;
+}
+
+.action-btn {
+    padding: 0px 10px !important; 
+}
+
+.action-btn-inside .dropdown-item {
+    cursor: pointer;
+}
+
+.action-btn-inside .dropdown-item:hover {
+    background-color: #eeeeee;
+}
+
+.grow2 { transform: scale(1.05); }
+
+@media only screen and (max-width: 991px) {
+    .page-name>h5 {
+        display: none;
+    }
+
+    .navbar-right-items {
+        display: flex;
+        flex-direction: row !important;
+    }
+    .page-name {
+        margin-left: 0px;
+    }
+
+    .action-btn-inside {
+        left: -100px !important;
+    }
+    
+}
+
+@media only screen and (max-width: 330px) {
+    #logo {
+        height: 30px;
+        width: auto;
+        margin-left: -20px;
+    }
+}
+
+@media only screen and (max-width: 330px) {
+    .table-cls {
+        overflow: auto;
+    }
+}
+
+@media only screen and (max-width: 991px) {
+    .action-btn-inside .dropdown-item {
+        cursor: pointer;
+    }
+ }
+
+ 
